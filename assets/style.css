@@ -241,9 +241,9 @@ header h1 {
 }
 
 footer {
-  background-color: var(--color-main);
-  color: var(--color-white);
-  font-weight: 400;
+  color: var(--color-secondary);
+  background-color: var(--color-white);
+  font-weight: 600;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -262,3 +262,13 @@ footer a {
 .m-top {
   margin-top: 20px;
 }
+
+.m-bottom {
+  margin-bottom: 50px !important;
+}
+
+.section-tech {
+  color: white;
+  background-color: var(--color-main);
+}
+
