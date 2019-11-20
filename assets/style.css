@@ -1,0 +1,156 @@
+
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: Helvetica, sans-serif;
+  --text-color-main: #222;
+  --text-color-secondary: #666;
+  --color-light: #ddd;
+  --box-shadow-1: 3px 6px rgba(#000, 0.16), 0 3px 6px rgba(#000, 0.23);
+  --transition: all .3s ease;
+  --border-radius-1: 5px;
+  color: var(--text-color-main);
+  box-sizing: border-box;
+}
+
+.top-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.top-nav__list {
+  list-style: none;
+  display: flex;
+}
+
+.top-nav__list > li {
+  padding: 5px 10px
+}
+
+header {
+  min-height: 100vh;
+  display: flex;
+}
+
+header > div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header iframe {
+  width: 640px;
+  height: 360px;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.video-wrapper {
+  background: var(--text-color-main);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.header-left {
+  flex-direction: column;
+}
+
+.header-left p {
+  font-size: 24px;
+  width: 70%;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.header-buttons {
+  display: flex;
+  margin-top: 25px;
+}
+
+.button {
+  font-size: 15px;
+  padding: 10px 19px;
+  box-shadow: var(box-shadow-1);
+  cursor: pointer;
+  border-radius: var(--border-radius-1);
+  border: 2px solid  var(--text-color-secondary);
+  margin: 5px 8px;  
+  transition: var(--transition);
+}
+
+.button:hover {
+  background-color: var(--color-light);
+}
+
+.section {
+  min-height: 100vh;
+}
+
+.section-story {
+  background-color: var(--text-color-main);
+  color: white;
+}
+
+.row {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 30px 0;
+}
+
+
+.section-heading {
+  font-size: 50px;
+  text-align: center;
+  padding: 60px 0 30px 0;
+  margin-bottom: 45px;
+  margin-top: 30px;
+}
+
+.story-row {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.story-row > div{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.story-row h3 {
+  font-size: 33px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.story-row p {
+  text-align: center;
+  width: 80%;
+  font-size: 22px;
+}

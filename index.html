@@ -1,18 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Day in the Life at CTU - Minimovie</title>
-</head>
-<body>
-  <h1>
-    Day in the Life at CTU Prague 
-  </h1>
-  <iframe
-  src="https://www.youtube.com/embed/s1azMD-V2Uw"
-  allowfullscreen
-></iframe>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Day in the Life at CTU - Minimovie</title>
+  </head>
+  <body>
+    <nav class="top-nav">
+      <!-- TODO: redirect to CTU homepage -->
+      <a href="https://cvut.cz" target="_blank">
+        <img src="TODO" alt="CTU Prague logo" />
+      </a>
+      <div>
+        <!-- right section -->
+        <ul class="top-nav__list">
+          <li>
+            <a href="#story">
+              Story
+            </a>
+          </li>
+          <li>
+            <a href="#tech">
+              Tech
+            </a>
+          </li>
+          <li>
+            <a href="#authors">
+              Authors
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header class="container">
+      <div class="header-left">
+        <h1>A DAY IN THE LIFE <br />AT CTU PRAGUE</h1>
+        <p>
+          An action-packed, world renowed minimovie depicting the everyday life of a CTU student.
+        </p>
+        <div class="header-buttons">
+          <div class="button">Tell me more!</div>
+          <div class="button">Who made this?</div>
+        </div>
+      </div>
+      <div>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/s1azMD-V2Uw"></iframe>
+        </div>
+      </div>
+    </header>
+    <section class="section section-story">
+      <div>
+        <h1 id="story" class="row section-heading">
+          A THRILLING STORYLINE
+        </h1>
+      </div>
+      <div class="row story-row">
+        <div class="story-description">
+          <h3>Get up late</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum neque!</p>
+        </div>
+        <div class="story-img">
+          <img src="assets/img/fel_logo.png" alt="first story" />
+        </div>
+      </div>
+      <div class="row story-row">
+        <div class="story-img">
+          <img src="assets/img/fel_logo.png" alt="first story" />
+        </div>
+        <div class="story-description">
+          <h3>Get to school, eventually</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum neque! fdasfd asdffasdfl Lorem, ipsum.</p>
+        </div>
+      </div>
+      <div class="row story-row">
+        <div class="story-description">
+          <h3>Have a nap</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum neque!</p>
+        </div>
+        <div class="story-img">
+          <img src="assets/img/fel_logo.png" alt="first story" />
+        </div>
+      </div>
+    </section>
+    <section class="section section-authors">
+        <div>
+          <h1 id="authors" class="row section-heading">
+            Authors
+          </h1>
+        </div>
+        <div class="row story-row">
+          <div class="story-description">
+            <h3>Get up late</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum neque!</p>
+          </div>
+          <div class="story-img">
+            <img src="assets/img/fel_logo.png" alt="second story" />
+          </div>
+        </div>
+        <div class="row story-row">
+          <div class="story-img">
+            <img src="assets/img/fel_logo.png" alt="third story" />
+          </div>
+          <div class="story-description">
+            <h3>Get to school, eventually</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum neque! fdasfd asdffasdfl Lorem, ipsum.</p>
+          </div>
+        </div>
+        <div class="row story-row">
+          <div class="story-description">
+            <h3>Have a nap</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum neque!</p>
+          </div>
+          <div class="story-img">
+            <img src="assets/img/fel_logo.png" alt="first story" />
+          </div>
+        </div>
+    </section>
+  </body>
 </html>
