@@ -1,6 +1,6 @@
-
-
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
@@ -8,14 +8,42 @@
 
 html {
   font-family: Helvetica, sans-serif;
-  --text-color-main: #222;
-  --text-color-secondary: #666;
-  --color-light: #ddd;
-  --box-shadow-1: 3px 6px rgba(#000, 0.16), 0 3px 6px rgba(#000, 0.23);
-  --transition: all .3s ease;
-  --border-radius-1: 5px;
-  color: var(--text-color-main);
+  color: var(--color-main);
   box-sizing: border-box;
+}
+
+body {
+  --color-main: #222;
+  --color-main-1: #666;
+  --color-secondary: #007ac3;
+  --color-secondary-dark: #004a77;
+  --color-light: #ddd;
+  --color-white: #fff;
+  --box-shadow-1: 3px 6px rgba(#000, 0.16), 0 3px 6px rgba(#000, 0.23);
+  --transition: all 0.3s ease;
+  --border-radius-1: 5px;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  transition: var(--transition);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+a,
+a:visited {
+  color: var(--color-main);
+}
+
+a:hover {
+  color: var(--color-secondary);
+}
+
+.secondary-color {
+  color: var(--color-secondary);
 }
 
 .top-nav {
@@ -28,6 +56,9 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 0 15px;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .top-nav__list {
@@ -36,7 +67,7 @@ html {
 }
 
 .top-nav__list > li {
-  padding: 5px 10px
+  padding: 5px 10px;
 }
 
 header {
@@ -67,7 +98,7 @@ header h1 {
 }
 
 .video-wrapper {
-  background: var(--text-color-main);
+  background: var(--color-secondary);
   padding: 30px;
   border-radius: 20px;
 }
@@ -85,18 +116,30 @@ header h1 {
 
 .header-buttons {
   display: flex;
-  margin-top: 25px;
+  margin-top: 35px;
+}
+
+.header-buttons > .button:first-of-type {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  margin-right: 10px;
+}
+
+.header-buttons > .button:first-of-type:hover {
+  background-color: var(--color-secondary-dark);
 }
 
 .button {
   font-size: 15px;
-  padding: 10px 19px;
+  padding: 11px 21px;
   box-shadow: var(box-shadow-1);
   cursor: pointer;
   border-radius: var(--border-radius-1);
-  border: 2px solid  var(--text-color-secondary);
-  margin: 5px 8px;  
+  border: 2px solid var(--color-main-1);
+  margin: 5px 8px;
   transition: var(--transition);
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .button:hover {
@@ -108,8 +151,8 @@ header h1 {
 }
 
 .section-story {
-  background-color: var(--text-color-main);
-  color: white;
+  background-color: var(--color-main);
+  color: var(--color-white);
 }
 
 .row {
@@ -121,12 +164,11 @@ header h1 {
   padding: 30px 0;
 }
 
-
 .section-heading {
   font-size: 50px;
   text-align: center;
   padding: 60px 0 30px 0;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
   margin-top: 30px;
 }
 
@@ -135,7 +177,7 @@ header h1 {
   margin-bottom: 100px;
 }
 
-.story-row > div{
+.story-row > div {
   width: 50%;
   display: flex;
   justify-content: center;
@@ -150,7 +192,33 @@ header h1 {
 }
 
 .story-row p {
-  text-align: center;
   width: 80%;
+}
+
+.paragraph {
   font-size: 22px;
+  text-align: center;
+}
+
+.author-container {
+  margin-top: 70px;
+}
+
+.author-container > img {
+  margin-bottom: 35px;
+  border-radius: 50%;
+  width: 180px;
+}
+
+footer {
+  background-color: var(--color-main);
+  color: var(--color-white);
+}
+
+footer a {
+  color: var(--color-white);
+}
+.ctu-logo {
+  height: 80px;
+  margin-top: 20px;
 }
