@@ -272,3 +272,10 @@ footer a {
   background-color: var(--color-main);
 }
 
+.dev-link {
+  color: var(--color-main) !important;
+}
+
+.dev-link:hover {
+  color: var(--color-secondary) !important;
+}
