@@ -20,6 +20,7 @@ body {
   --color-light: #ddd;
   --color-white: #fff;
   --box-shadow-1: 3px 6px rgba(#000, 0.16), 0 3px 6px rgba(#000, 0.23);
+  --box-shadow-2: 0 14px 28px rgba(#000, 0.25), 0 10px 10px rgba(#000, 0.22);
   --transition: all 0.3s ease;
   --border-radius-1: 5px;
 }
@@ -72,6 +73,7 @@ a:hover {
 
 header {
   min-height: 100vh;
+  width: 100vw;
   display: flex;
 }
 
@@ -93,7 +95,7 @@ header h1 {
 }
 
 .container {
-  max-width: 90%;
+  max-width: 1700px;
   margin: 0 auto;
 }
 
@@ -119,16 +121,6 @@ header h1 {
   margin-top: 35px;
 }
 
-.header-buttons > .button:first-of-type {
-  background-color: var(--color-secondary);
-  color: var(--color-white);
-  margin-right: 10px;
-}
-
-.header-buttons > .button:first-of-type:hover {
-  background-color: var(--color-secondary-dark);
-}
-
 .button {
   font-size: 15px;
   padding: 11px 21px;
@@ -145,6 +137,18 @@ header h1 {
 .button:hover {
   background-color: var(--color-light);
 }
+
+
+.first-button{
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  margin-right: 10px;
+}
+
+.first-button:hover {
+  background-color: var(--color-secondary-dark);
+}
+
 
 .section {
   min-height: 100vh;
@@ -172,6 +176,10 @@ header h1 {
   margin-top: 30px;
 }
 
+#story {
+  margin-bottom: 100px;
+}
+
 .story-row {
   display: flex;
   margin-bottom: 100px;
@@ -186,8 +194,8 @@ header h1 {
 }
 
 .story-row h3 {
-  font-size: 33px;
-  margin-bottom: 10px;
+  font-size: 35px;
+  margin-bottom: 15px;
   font-weight: 600;
 }
 
@@ -195,24 +203,52 @@ header h1 {
   width: 80%;
 }
 
+.story-img > img {
+  height: 280px;
+  border-radius: var(--border-radius-1);
+  box-shadow: var(--box-shadow-2);
+}
+
 .paragraph {
   font-size: 22px;
   text-align: center;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.bold {
+  font-weight: 600;
 }
 
 .author-container {
   margin-top: 70px;
 }
 
-.author-container > img {
-  margin-bottom: 35px;
+.author-container img {
   border-radius: 50%;
   width: 180px;
+}
+
+.author-wrapper {
+  background-color: var(--color-secondary);
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border-radius: 50%;
 }
 
 footer {
   background-color: var(--color-main);
   color: var(--color-white);
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
+  font-size: 20px;
 }
 
 footer a {
@@ -220,5 +256,9 @@ footer a {
 }
 .ctu-logo {
   height: 80px;
+  margin-top: 20px;
+}
+
+.m-top {
   margin-top: 20px;
 }

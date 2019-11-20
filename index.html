@@ -9,7 +9,6 @@
   </head>
   <body>
     <nav class="top-nav">
-      <!-- TODO: redirect to CTU homepage -->
       <a href="https://www.cvut.cz" target="_blank">
         <img class="ctu-logo" src="assets/img/ctu.png" alt="CTU Prague logo" />
       </a>
@@ -36,13 +35,21 @@
     </nav>
     <header class="container">
       <div class="header-left">
-        <h1>A DAY IN THE LIFE <br />AT <span class="secondary-color">CTU</span>PRAGUE</h1>
+        <h1>A DAY IN THE LIFE <br />AT <span class="secondary-color">CTU</span> PRAGUE</h1>
         <p class="paragraph">
           An action-packed, world renowed minimovie depicting the everyday life of a CTU student.
         </p>
         <div class="header-buttons">
-          <div class="button">Tell me more!</div>
-          <div class="button">Who made this?</div>
+          <a href="#story">
+            <div class="button first-button">
+              Tell me more!
+            </div>
+          </a>
+          <a href="#authors">
+            <div class="button">
+              Who made this?
+            </div>
+          </a>
         </div>
       </div>
       <div>
@@ -52,31 +59,33 @@
       </div>
     </header>
     <section class="section section-story">
-      <div>
-        <h1 id="story" class="row section-heading">
-          A THRILLING STORYLINE
+      <div id="story">
+        <h1 class="row section-heading">
+          THRILLING STORYLINE
+          <p class="paragraph m-top">
+            "The most accurate depiction of a student's day, ever." - The New York Times
+          </p>
         </h1>
       </div>
       <div class="row story-row">
         <div class="story-description">
-          <h3>Get up late</h3>
+          <h3>Get up late.</h3>
           <p class="paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum neque!
+            What better way to start the day off than oversleeping?
           </p>
         </div>
         <div class="story-img">
-          <img src="assets/img/fel_logo.png" alt="first story" />
+          <img src="assets/img/story-1.png" alt="alarm clock" />
         </div>
       </div>
       <div class="row story-row">
         <div class="story-img">
-          <img src="assets/img/fel_logo.png" alt="first story" />
+          <img src="assets/img/story-2.png" alt="ctu prague faculty of electrical engineering" />
         </div>
         <div class="story-description">
-          <h3>Get to school, eventually</h3>
+          <h3>Get to school, eventually.</h3>
           <p class="paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum neque! fdasfd asdffasdfl
-            Lorem, ipsum.
+            It might've not been as smooth but there you are finally, only 2 hours late.
           </p>
         </div>
       </div>
@@ -84,53 +93,49 @@
         <div class="story-description">
           <h3>Have a nap...</h3>
           <p class="paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum neque!
+            Within just a few minutes of class, you start to question why you bothered to get up
+            today in the first place.
           </p>
         </div>
         <div class="story-img">
-          <img src="assets/img/fel_logo.png" alt="first story" />
+          <img src="assets/img/story-3.png" alt="sleeping student" />
         </div>
       </div>
     </section>
     <section class="section section-authors">
       <div>
         <h1 id="authors" class="row section-heading">
-          Authors
+          AUTHORS
         </h1>
       </div>
       <p class="row paragraph">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo sit neque consectetur harum
-        aperiam ipsam numquam alias soluta nemo officiis similique odio nobis, quis voluptatum?
+        This project was a collaborative effort of two students at the Faculty of Electrical
+        Engineering at the Czech Technical University in Prague. It was put together as part of the
+        course "Foundations of Multimedia Production".
       </p>
       <div class="row story-row">
         <div class="author-container">
-          <img src="assets/img/tomas_chytka.jpg" alt="Tomáš Chytka" />
+          <div class="author-wrapper">
+            <img src="assets/img/tomas_chytka.jpg" alt="Tomáš Chytka" />
+          </div>
           <h3>Tomáš Chytka</h3>
+          <p class="paragraph secondary-color bold">
+            camera - sound - editing
+          </p>
         </div>
         <div class="author-container">
-          <img src="assets/img/alan_buzek.jpeg" alt="Alan Buzek" />
+          <div class="author-wrapper">
+            <img src="assets/img/alan_buzek.jpeg" alt="Alan Buzek" />
+          </div>
           <h3>Alan Buzek</h3>
+          <p class="paragraph secondary-color bold">
+            script - acting - website
+          </p>
         </div>
       </div>
     </section>
     <footer>
-      <ul>
-        <li>
-          <a href="mailto:buzekala@fel.cvut.cz" target="_blank" rel="noopener noreferrer"
-            ><li class="footer__list--element">Contact us</li></a
-          >
-        </li>
-        <li>
-          <a href="mailto:buzekala@fel.cvut.cz" target="_blank" rel="noopener noreferrer"
-            ><li class="footer__list--element">Feeback</li></a
-          >
-        </li>
-        <li>
-          <a href="mailto:buzekala@fel.cvut.cz" target="_blank" rel="noopener noreferrer"
-            ><li class="footer__list--element">Support</li></a
-          >
-        </li>
-      </ul>
+      Alan Buzek 2019 © No Rights Reserved :)
     </footer>
   </body>
 </html>
